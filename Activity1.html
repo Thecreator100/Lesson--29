@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON in JS</title>
+</head>
+<body>
+    <h2> Convert Javascript object into JSON object and send it to server.</h2>
+    <p id="result"></p>
+    <script>
+        var myObj ={Name:"Riya", Age:12,Grade:6};
+
+        var myJSON = JSON.stringify(myObj);//converts JS object to JSON to send data
+
+        var newObj = JSON.parse(myJSON);//converts JSON objects to recieve data
+
+        documnet.getElementById("result").innerHTML = newObj.Name + ", Age: "+
+                                                      newObj.Age+ " Grade: "+
+                                                      newObj.Grade
+    </script>
+</body>
+</html>
